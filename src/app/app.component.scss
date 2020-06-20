@@ -1,0 +1,9 @@
+.app-body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: auto;
+}
