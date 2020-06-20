@@ -2,7 +2,9 @@
 <!--  space for text-->
 </div>
 <mat-toolbar class="navbar">
-  <div>Symbaroum</div>
+  <div>
+    <span class="nav-item" [routerLink]="'/welcome'">Symbaroum</span>
+  </div>
   <div>
     <span class="nav-item" [routerLink]="'/admin'" [routerLinkActive]="'active'">Admin</span>
     <span class="nav-item" [routerLink]="'/game-master'" [routerLinkActive]="'active'">Game Master</span>

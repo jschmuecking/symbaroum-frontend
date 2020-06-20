@@ -15,9 +15,13 @@
 
 .nav-item {
   cursor: pointer;
-  padding-right: 1rem;
+  padding-right: 2rem;
 
   &.active {
     color: colors.$yellow;
+  }
+  
+  &:last-of-type {
+    padding-right: 0;
   }
 }
