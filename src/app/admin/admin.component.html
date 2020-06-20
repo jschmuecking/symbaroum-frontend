@@ -1,1 +1,41 @@
-<p>admin works!</p>
+<mat-sidenav-container class="container">
+
+  <mat-sidenav mode="side" opened class="sidenav">
+    <mat-nav-list disableRipple>
+      <mat-list-item>
+        <a [routerLink]="'/admin/races'">Races</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a [routerLink]="'/admin/traits'">Traits</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a [routerLink]="'/admin/boons-burdens'">Boons & Burdens</a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <h3 matSubheader>Abilities & Mystical Powers</h3>
+      <div class="sub-section">
+        <mat-list-item>
+          <a [routerLink]="'/admin/abilities'">Abilities</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a [routerLink]="'/admin/mystical-traditions'">Mystical Traditions</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a [routerLink]="'/admin/mystical-powers'">Mystical Powers</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a [routerLink]="'/admin/rituals'">Rituals</a>
+        </mat-list-item>
+      </div>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <a [routerLink]="'/admin/equipment'">Equipment</a>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
