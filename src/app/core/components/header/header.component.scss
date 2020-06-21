@@ -1,0 +1,27 @@
+@use "src/colors";
+
+.header-image {
+  background-image: url("src/assets/img/header.png");
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+.nav-item {
+  cursor: pointer;
+  padding-right: 2rem;
+
+  &.active {
+    color: colors.$yellow;
+  }
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+}
