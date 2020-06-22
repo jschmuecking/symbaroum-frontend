@@ -1,0 +1,128 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+@import "color-palettes";
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$symbaroum-primary: mat-palette($sym-black);
+$symbaroum-accent: mat-palette($sym-brown);
+
+// The warn palette is optional (defaults to red).
+$symbaroum-warn: mat-palette($mat-red);
+
+// todo add dark theme
+$symbaroum-light-theme-foreground: (
+  base: black,
+  divider: $dark-dividers,
+  dividers: $dark-dividers,
+  disabled: $dark-disabled-text,
+  disabled-button: rgba(black, 0.26),
+  disabled-text: $dark-disabled-text,
+  elevation: black,
+  hint-text: $dark-disabled-text,
+  secondary-text: $dark-secondary-text,
+  icon: rgba(black, 0.54),
+  icons: rgba(black, 0.54),
+  text: rgba(black, 0.87),
+  slider-min: rgba(black, 0.87),
+  slider-off: rgba(black, 0.26),
+  slider-off-active: rgba(black, 0.38),
+);
+
+// 50 -> 500
+// 100 -> 600
+// 200 -> 700
+// 300 -> 800
+// 400 -> 900
+
+$symbaroum-light-theme-background: (
+  status-bar: map_get($sym-background, 800),
+  app-bar: map_get($sym-background, 600),
+  background: map_get($sym-background, 500),
+  hover: rgba(black, 0.04),
+  // TODO(kara): check style with Material Design UX
+    card: map_get($sym-background, 200),
+  dialog: map_get($sym-background, 200),
+  disabled-button: rgba(black, 0.12),
+  raised-button: map_get($sym-background, 200),
+  focused-button: $dark-focused,
+  selected-button: map_get($sym-background, 800),
+  selected-disabled-button: map_get($sym-background, 900),
+  disabled-button-toggle: map_get($sym-background, 700),
+  unselected-chip: map_get($sym-background, 800),
+  disabled-list-option: map_get($sym-background, 700),
+  tooltip: map_get($mat-grey, 700),
+);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$symbaroum-theme: (
+  primary: $symbaroum-primary,
+  accent: $symbaroum-accent,
+  warn: $symbaroum-warn,
+  is-dark: false,
+  foreground: $symbaroum-light-theme-foreground,
+  background: $symbaroum-light-theme-background,
+);
+
+$symbaroum-dark-theme-foreground: (
+  base: white,
+  divider: $light-dividers,
+  dividers: $light-dividers,
+  disabled: $light-disabled-text,
+  disabled-button: rgba(white, 0.3),
+  disabled-text: $light-disabled-text,
+  elevation: black,
+  hint-text: $light-disabled-text,
+  secondary-text: $light-secondary-text,
+  icon: white,
+  icons: white,
+  text: white,
+  slider-min: white,
+  slider-off: rgba(white, 0.3),
+  slider-off-active: rgba(white, 0.3),
+);
+
+$symbaroum-dark-theme-background: (
+  status-bar: black,
+  app-bar: map_get($sym-black, 900),
+  background: #303030,
+  hover: rgba(white, 0.04),
+  // TODO(kara): check style with Material Design UX
+    card: map_get($sym-black, 800),
+  dialog: map_get($sym-black, 800),
+  disabled-button: rgba(white, 0.12),
+  raised-button: map-get($sym-black, 800),
+  focused-button: $light-focused,
+  selected-button: map_get($sym-black, 900),
+  selected-disabled-button: map_get($sym-black, 800),
+  disabled-button-toggle: black,
+  unselected-chip: map_get($sym-black, 700),
+  disabled-list-option: black,
+  tooltip: map_get($sym-black, 700),
+);
+
+$symbaroum-dark-theme: (
+  primary: mat-palette($sym-background),
+  accent: mat-palette($sym-yellow),
+  warn: $symbaroum-warn,
+  is-dark: true,
+  foreground: $symbaroum-dark-theme-foreground,
+  background: $symbaroum-dark-theme-background,
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($symbaroum-theme);
+
+.symbaroum-dark-theme {
+  @include angular-material-theme($symbaroum-dark-theme);
+}
