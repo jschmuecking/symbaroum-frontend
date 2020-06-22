@@ -1,14 +1,26 @@
 <div class="header-image">
-<!--  space for text-->
+  <!--  space for text-->
 </div>
-<mat-toolbar class="navbar">
+<mat-toolbar class="navbar" color="primary">
   <div>
     <span class="nav-item" [routerLink]="'/welcome'">Symbaroum</span>
   </div>
   <div>
-    <span class="nav-item" [routerLink]="'/admin'" [routerLinkActive]="'active'">Admin</span>
-    <span class="nav-item" [routerLink]="'/game-master'" [routerLinkActive]="'active'">Game Master</span>
-    <span class="nav-item" [routerLink]="'/player'" [routerLinkActive]="'active'">Player</span>
+    <span class="nav-item" [routerLink]="'/admin'" [routerLinkActive]="'active'"
+      >Admin</span
+    >
+    <span
+      class="nav-item"
+      [routerLink]="'/game-master'"
+      [routerLinkActive]="'active'"
+      >Game Master</span
+    >
+    <span
+      class="nav-item"
+      [routerLink]="'/player'"
+      [routerLinkActive]="'active'"
+      >Player</span
+    >
   </div>
   <div>
     <mat-icon>person</mat-icon>
