@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "News Cycle";
+  src: url("src/assets/fonts/Bold/NewsCycle-Bold.woff2") format("woff2"),
+    url("src/assets/fonts/Bold/NewsCycle-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "News Cycle";
+  src: url("src/assets/fonts/Regular/NewsCycle.woff2") format("woff2"),
+    url("src/assets/fonts/Regular/NewsCycle.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adamant BG";
+  src: url("src/assets/fonts/Bold/AdamantBG-Bold.woff2") format("woff2"),
+    url("src/assets/fonts/Bold/AdamantBG-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adamant BG";
+  src: url("src/assets/fonts/Italic/AdamantBG-Italic.woff2") format("woff2"),
+    url("src/assets/fonts/Italic/AdamantBG-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adamant BG";
+  src: url("src/assets/fonts/BoldItalic/AdamantBG-BoldItalic.woff2")
+      format("woff2"),
+    url("src/assets/fonts/BoldItalic/AdamantBG-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adamant BG";
+  src: url("src/assets/fonts/Regular/AdamantBG.woff2") format("woff2"),
+    url("src/assets/fonts/Regular/AdamantBG.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
