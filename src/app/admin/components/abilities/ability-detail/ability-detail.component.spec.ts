@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TraitLevelComponent } from './trait-level.component';
+import { AbilityDetailComponent } from './ability-detail.component';
 
-describe('TraitLevelComponent', () => {
-  let component: TraitLevelComponent;
-  let fixture: ComponentFixture<TraitLevelComponent>;
+describe('AbilityDetailComponent', () => {
+  let component: AbilityDetailComponent;
+  let fixture: ComponentFixture<AbilityDetailComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [TraitLevelComponent],
+      declarations: [AbilityDetailComponent],
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TraitLevelComponent);
+    fixture = TestBed.createComponent(AbilityDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

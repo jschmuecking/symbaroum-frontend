@@ -1,0 +1,16 @@
+<div *ngIf="!!ability" class="ability-container">
+  <div class="sym-ability-header">
+    {{ ability.name }}
+  </div>
+
+  <div
+    class="sym-ability-description"
+    [innerHTML]="ability.description | sanitizeHtml"
+  ></div>
+  <ng-container *ngIf="!!ability.novice">
+    <mat-divider></mat-divider>
+    <sym-ability-level [abilityLevel]="ability.novice"></sym-ability-level>
+    <sym-ability-level [abilityLevel]="ability.adept"></sym-ability-level>
+    <sym-ability-level [abilityLevel]="ability.master"></sym-ability-level>
+  </ng-container>
+</div>

@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-abilities',
+  selector: 'sym-abilities',
   templateUrl: './abilities.component.html',
-  styleUrls: ['./abilities.component.scss']
+  styleUrls: ['./abilities.component.scss'],
 })
 export class AbilitiesComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

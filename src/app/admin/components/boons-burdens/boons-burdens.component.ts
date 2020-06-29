@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-boons-burdens',
+  selector: 'sym-boons-burdens',
   templateUrl: './boons-burdens.component.html',
-  styleUrls: ['./boons-burdens.component.scss']
+  styleUrls: ['./boons-burdens.component.scss'],
 })
 export class BoonsBurdensComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

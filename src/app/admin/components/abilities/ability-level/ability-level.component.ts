@@ -2,11 +2,11 @@ import { Component, Input } from '@angular/core';
 import { AbilityLevel } from '../../../model/ability-level';
 
 @Component({
-  selector: 'app-trait-level',
-  templateUrl: './trait-level.component.html',
-  styleUrls: ['./trait-level.component.scss'],
+  selector: 'sym-ability-level',
+  templateUrl: './ability-level.component.html',
+  styleUrls: ['./ability-level.component.scss'],
 })
-export class TraitLevelComponent {
+export class AbilityLevelComponent {
   @Input()
   abilityLevel: AbilityLevel;
 }

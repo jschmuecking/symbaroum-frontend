@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-races',
+  selector: 'sym-races',
   templateUrl: './races.component.html',
-  styleUrls: ['./races.component.scss']
+  styleUrls: ['./races.component.scss'],
 })
 export class RacesComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

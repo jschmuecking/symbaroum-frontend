@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-mystical-powers',
+  selector: 'sym-mystical-powers',
   templateUrl: './mystical-powers.component.html',
-  styleUrls: ['./mystical-powers.component.scss']
+  styleUrls: ['./mystical-powers.component.scss'],
 })
 export class MysticalPowersComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

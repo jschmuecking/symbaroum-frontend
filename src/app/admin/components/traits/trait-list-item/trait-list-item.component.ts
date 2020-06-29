@@ -3,7 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Trait } from '../../../model/trait';
 
 @Component({
-  selector: 'app-trait-list-item',
+  selector: 'sym-trait-list-item',
   templateUrl: './trait-list-item.component.html',
   styleUrls: ['./trait-list-item.component.scss'],
 })

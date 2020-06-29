@@ -3,7 +3,7 @@ import { Trait } from '../../../model/trait';
 import { TraitService } from '../trait.service';
 
 @Component({
-  selector: 'app-trait-list',
+  selector: 'sym-trait-list',
   templateUrl: './trait-list.component.html',
   styleUrls: ['./trait-list.component.scss'],
 })
