@@ -1,7 +1,7 @@
 @font-face {
   font-family: "News Cycle";
-  src: url("src/assets/fonts/Bold/NewsCycle-Bold.woff2") format("woff2"),
-    url("src/assets/fonts/Bold/NewsCycle-Bold.woff") format("woff");
+  src: url("src/assets/fonts/NewsCycle/NewsCycle-Bold.woff2") format("woff2"),
+    url("src/assets/fonts/NewsCycle/NewsCycle-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: "News Cycle";
-  src: url("src/assets/fonts/Regular/NewsCycle.woff2") format("woff2"),
-    url("src/assets/fonts/Regular/NewsCycle.woff") format("woff");
+  src: url("src/assets/fonts/NewsCycle/NewsCycle.woff2") format("woff2"),
+    url("src/assets/fonts/NewsCycle/NewsCycle.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: "Adamant BG";
-  src: url("src/assets/fonts/Bold/AdamantBG-Bold.woff2") format("woff2"),
-    url("src/assets/fonts/Bold/AdamantBG-Bold.woff") format("woff");
+  src: url("src/assets/fonts/AdamantBG/AdamantBG-Bold.woff2") format("woff2"),
+    url("src/assets/fonts/AdamantBG/AdamantBG-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: "Adamant BG";
-  src: url("src/assets/fonts/Italic/AdamantBG-Italic.woff2") format("woff2"),
-    url("src/assets/fonts/Italic/AdamantBG-Italic.woff") format("woff");
+  src: url("src/assets/fonts/AdamantBG/AdamantBG-Italic.woff2") format("woff2"),
+    url("src/assets/fonts/AdamantBG/AdamantBG-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -36,9 +36,9 @@
 
 @font-face {
   font-family: "Adamant BG";
-  src: url("src/assets/fonts/BoldItalic/AdamantBG-BoldItalic.woff2")
+  src: url("src/assets/fonts/AdamantBG/AdamantBG-BoldItalic.woff2")
       format("woff2"),
-    url("src/assets/fonts/BoldItalic/AdamantBG-BoldItalic.woff") format("woff");
+    url("src/assets/fonts/AdamantBG/AdamantBG-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -46,8 +46,118 @@
 
 @font-face {
   font-family: "Adamant BG";
-  src: url("src/assets/fonts/Regular/AdamantBG.woff2") format("woff2"),
-    url("src/assets/fonts/Regular/AdamantBG.woff") format("woff");
+  src: url("src/assets/fonts/AdamantBG/AdamantBG.woff2") format("woff2"),
+    url("src/assets/fonts/AdamantBG/AdamantBG.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("src/assets/fonts/PTSerif/PTSerif-Regular.woff2") format("woff2"),
+    url("src/assets/fonts/PTSerif/PTSerif-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("src/assets/fonts/PTSerif/PTSerif-Italic.woff2") format("woff2"),
+    url("src/assets/fonts/PTSerif/PTSerif-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("src/assets/fonts/PTSerif/PTSerif-Bold.woff2") format("woff2"),
+    url("src/assets/fonts/PTSerif/PTSerif-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("src/assets/fonts/PTSerif/PTSerif-BoldItalic.woff2") format("woff2"),
+    url("src/assets/fonts/PTSerif/PTSerif-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manuale";
+  src: url("src/assets/fonts/Manuale/Manuale-Bold.woff2") format("woff2"),
+    url("src/assets/fonts/Manuale/Manuale-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manuale";
+  src: url("src/assets/fonts/Manuale/Manuale-Italic.woff2") format("woff2"),
+    url("src/assets/fonts/Manuale/Manuale-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manuale";
+  src: url("src/assets/fonts/Manuale/Manuale-SemiBoldItalic.woff2")
+      format("woff2"),
+    url("src/assets/fonts/Manuale/Manuale-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manuale";
+  src: url("src/assets/fonts/Manuale/Manuale-Medium.woff2") format("woff2"),
+    url("src/assets/fonts/Manuale/Manuale-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manuale";
+  src: url("src/assets/fonts/Manuale/Manuale-SemiBold.woff2") format("woff2"),
+    url("src/assets/fonts/Manuale/Manuale-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manuale";
+  src: url("src/assets/fonts/Manuale/Manuale-MediumItalic.woff2")
+      format("woff2"),
+    url("src/assets/fonts/Manuale/Manuale-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manuale";
+  src: url("src/assets/fonts/Manuale/Manuale-BoldItalic.woff2") format("woff2"),
+    url("src/assets/fonts/Manuale/Manuale-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manuale";
+  src: url("src/assets/fonts/Manuale/Manuale-Regular.woff2") format("woff2"),
+    url("src/assets/fonts/Manuale/Manuale-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
