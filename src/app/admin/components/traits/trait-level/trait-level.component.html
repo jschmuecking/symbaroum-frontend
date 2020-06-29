@@ -1,0 +1,7 @@
+<div class="sym-ability-level flex-container">
+  <div class="level">{{ abilityLevel.level | titlecase }}</div>
+  <div class="description">
+    <span class="type sym-bold">{{ abilityLevel.type | titlecase }}. </span>
+    <span [innerHTML]="abilityLevel.description | sanitizeHtml"></span>
+  </div>
+</div>

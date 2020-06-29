@@ -10,6 +10,8 @@ import { MysticalPowersComponent } from './components/mystical-powers/mystical-p
 import { MysticalTraditionsComponent } from './components/mystical-traditions/mystical-traditions.component';
 import { RacesComponent } from './components/races/races.component';
 import { RitualsComponent } from './components/rituals/rituals.component';
+import { TraitDetailComponent } from './components/traits/trait-detail/trait-detail.component';
+import { TraitListComponent } from './components/traits/trait-list/trait-list.component';
 import { TraitsComponent } from './components/traits/traits.component';
 
 const routes: Routes = [
@@ -19,7 +21,14 @@ const routes: Routes = [
     children: [
       { path: '', component: AdminDescriptionComponent },
       { path: 'races', component: RacesComponent },
-      { path: 'traits', component: TraitsComponent },
+      {
+        path: 'traits',
+        component: TraitsComponent,
+        children: [
+          { path: '', component: TraitListComponent },
+          { path: ':id', component: TraitDetailComponent },
+        ],
+      },
       { path: 'boons-burdens', component: BoonsBurdensComponent },
       { path: 'abilities', component: AbilitiesComponent },
       { path: 'mystical-traditions', component: MysticalTraditionsComponent },

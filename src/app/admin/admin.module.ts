@@ -13,6 +13,10 @@ import { MysticalTraditionsComponent } from './components/mystical-traditions/my
 import { RacesComponent } from './components/races/races.component';
 import { RitualsComponent } from './components/rituals/rituals.component';
 import { TraitsComponent } from './components/traits/traits.component';
+import { TraitListItemComponent } from './components/traits/trait-list-item/trait-list-item.component';
+import { TraitListComponent } from './components/traits/trait-list/trait-list.component';
+import { TraitDetailComponent } from './components/traits/trait-detail/trait-detail.component';
+import { TraitLevelComponent } from './components/traits/trait-level/trait-level.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,10 @@ import { TraitsComponent } from './components/traits/traits.component';
     MysticalPowersComponent,
     RitualsComponent,
     EquipmentComponent,
+    TraitListItemComponent,
+    TraitListComponent,
+    TraitDetailComponent,
+    TraitLevelComponent,
   ],
   imports: [CommonModule, AdminRoutingModule, SharedModule],
 })

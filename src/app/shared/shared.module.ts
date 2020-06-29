@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from './material.module';
+import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 
 @NgModule({
-  declarations: [],
+  declarations: [SafeHtmlPipe],
   imports: [CommonModule, MaterialModule],
-  exports: [CommonModule, MaterialModule],
+  exports: [CommonModule, MaterialModule, SafeHtmlPipe],
 })
 export class SharedModule {}
