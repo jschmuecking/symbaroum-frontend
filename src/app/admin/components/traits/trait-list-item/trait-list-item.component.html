@@ -1,3 +1,6 @@
-<h3 class="name" (click)="navigateToTraitDetail()">
-  {{ trait.name }}
-</h3>
+<mat-card class="wrapper" (click)="navigateToTraitDetail()">
+  <img [src]="'assets/img/thumbnails/' + nameToImagePath() + '.png'" />
+  <div>
+    {{ trait.name }}
+  </div>
+</mat-card>

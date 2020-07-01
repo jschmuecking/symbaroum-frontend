@@ -16,4 +16,8 @@ export class TraitListItemComponent {
   navigateToTraitDetail() {
     this.router.navigate([this.trait.id], { relativeTo: this.activatedRoute });
   }
+
+  nameToImagePath(): string {
+    return this.trait.name.toLowerCase().replace(/ /g, '_');
+  }
 }
